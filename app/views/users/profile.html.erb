@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<b><font size="8"><%= "#{@user.f_name} #{@user.l_name}" %></font></b><br><br>
+		<%= form_for :user, url: '/settings' do |f| %>
+			<div class="form-group">
+				<%= f.label :email %>
+				<%= f.text_field :email, class: "form-control" %>
+			</div>
+			<b><%= "Attending" %></b><br>
+			<div class="form-group">
+				<%= f.radio_button :attending, true, :id=>"first" %>
+				<label for="first" class="radio-label">Yes</label>
+				<br>
+				<%= f.radio_button :attending, false, :id=>"second" %>
+				<label for="second" class="radio-label">No</label>
+			</div>
+			<div class="form-group">
+				<%= f.submit "Submit", class: 'btn btn-success' %>
+			</div>
+		<% end %>
+	</div>
+</div>

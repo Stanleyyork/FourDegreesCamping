@@ -1,0 +1,37 @@
+.nav {
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.btn.btn-default.btn-xs {
+    color: grey;
+}
+
+.homepage-background {
+	position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("https://farm6.staticflickr.com/5746/21179833574_c93b159973_k.jpg");
+    background-size: cover;
+}
+
+.homepage {
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+}
+
+#facebook-login-button {
+	width: 250px;
+}
+
+.radio-label {
+    font-weight: normal;
+}
