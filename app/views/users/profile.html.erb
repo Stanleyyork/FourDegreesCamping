@@ -6,14 +6,30 @@
 				<%= f.label :email %>
 				<%= f.text_field :email, class: "form-control" %>
 			</div>
-			<b><%= "Attending" %></b><br>
+			
 			<div class="form-group">
-				<%= f.radio_button :attending, true, :id=>"first" %>
-				<label for="first" class="radio-label">Yes</label>
+			<b><%= "Attending" %></b><br>
+				<%= f.radio_button :attending, true, :id=>"attending-first" %>
+				<label for="attending-first" class="radio-label">Yes</label>
 				<br>
-				<%= f.radio_button :attending, false, :id=>"second" %>
-				<label for="second" class="radio-label">No</label>
+				<%= f.radio_button :attending, false, :id=>"attending-second" %>
+				<label for="attending-second" class="radio-label">No</label>
 			</div>
+
+			<div class="form-group" id="car">
+			<b><%= "Car Available" %></b><br>
+				<%= f.radio_button :car_available, true, :id=>"car-first" %>
+				<label for="car-first" class="radio-label">Yes</label>
+				<br>
+				<%= f.radio_button :car_available, false, :id=>"car-second" %>
+				<label for="car-second" class="radio-label">No</label>
+			</div>
+
+			<div class="form-group" id="car-extra-seats">
+			<b><%= "How many extra Seats?" %></b><br>
+				<%= f.text_field :car_extra_seats, class: "form-control" %>
+			</div>
+
 			<div class="form-group">
 				<%= f.submit "Submit", class: 'btn btn-success' %>
 			</div>

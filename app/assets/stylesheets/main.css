@@ -3,10 +3,10 @@
     margin-right: 25px;
     margin-top: 15px;
 }
-
 .btn.btn-default.btn-xs {
     color: grey;
 }
+
 
 .homepage-background {
 	position:fixed;
@@ -21,16 +21,40 @@
     background-image: url("https://farm6.staticflickr.com/5746/21179833574_c93b159973_k.jpg");
     background-size: cover;
 }
-
 .homepage {
-	margin-top: 50px;
+	margin-top: 5px;
 	text-align: center;
 	color: white;
 }
-
+#homepage-container {
+    margin-top: 50px
+}
+.homepage.copy{
+    font-size: 14px;
+}
+.homepage.about{
+    font-size: 14px;
+}
 #facebook-login-button {
 	width: 250px;
 }
+
+
+.about.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.about.body {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.about-image-container {
+    text-align: center;
+}
+.about.image {
+    margin: 5px;
+}
+
 
 .radio-label {
     font-weight: normal;

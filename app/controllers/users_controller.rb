@@ -10,6 +10,8 @@ class UsersController < ApplicationController
 		user_params = params["user"]
 		current_user.email = user_params["email"]
 		current_user.attending = user_params["attending"]
+		current_user.car_available = user_params["car_available"]
+		current_user.car_extra_seats = user_params["car_extra_seats"]
 		current_user.save
 		redirect_to '/profile'
 	end
